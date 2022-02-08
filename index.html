@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <script src="jquery-2.1.4.min.js"></script>
+   <link rel="stylesheet" href="SimpleCalculadorajQuery.css">
+   <script src="SimpleCalculadorajQuery.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4 ">
+            <div id="idCalculadora"></div>
+		</div>
+      </div>
+    </div>
+    
+    <script>
+         $("#idCalculadora").Calculadora();
+         $("#micalc").Calculadora({'EtiquetaBorrar':'Clear'});
+        $("#CalcOptoins").Calculadora({
+            EtiquetaBorrar:'Clear',
+            ClaseBtns1: 'warning', 
+            ClaseBtns2: 'success', 
+			ClaseBtns3: 'primary', 
+            TituloHTML:'<h2>Develoteca.com</h2>',
+            Botones:["+","-","*","/","0","1","2","3","4","5","6","7","8","9",".","="]
+        });
+        
+        (function(i,s,o,g,r,a,m){
+            i['GoogleAnalyticsObject']=r;i[r]=i[r]||
+        function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-74824848-1', 'auto');
+          ga('send', 'pageview');
+         
+    </script>
+  </body>
+</html>
